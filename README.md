@@ -108,4 +108,4 @@ YaMDB отправляет письмо с кодом подтверждения
 
 ### Автор
 Виктор Гостяйкин
-https://github.com/Viktor-Gostyaikin
+https://github.com/Viktor-Gostyaikin/yamdb_final
