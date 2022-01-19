@@ -4,8 +4,8 @@ from rest_framework import exceptions, serializers
 from rest_framework.relations import SlugRelatedField
 from rest_framework.validators import UniqueTogetherValidator, ValidationError
 from rest_framework_simplejwt.tokens import RefreshToken
-
 from reviews.models import Category, Comment, Genre, Review, Title
+
 from .fields import ConfirmationCodeField
 
 UNIQUE_REVIEW = 'Вы уже оставили отзыв к данному произведению'

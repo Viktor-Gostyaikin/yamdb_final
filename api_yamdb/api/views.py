@@ -10,8 +10,8 @@ from rest_framework.pagination import (LimitOffsetPagination,
                                        PageNumberPagination)
 from rest_framework.response import Response
 from rest_framework_simplejwt.views import TokenViewBase
-
 from reviews.models import Category, Genre, Review, Title
+
 from .filter import TitleFilter
 from .mixins import ListOrCreateOrDestroy
 from .permissions import (AdminOnly, AuthorOrAdminOrModeratorOnly,
