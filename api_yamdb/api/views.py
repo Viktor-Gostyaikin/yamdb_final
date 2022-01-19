@@ -68,12 +68,12 @@ class UserViewSet(viewsets.ModelViewSet):
             return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
 
-class Custom_TokenObtainPairView(TokenViewBase):
+class CustomTokenObtainPairView(TokenViewBase):
     ''' Получение JWT-токена в обмен на username и confirmation code. '''
     serializer_class = GetTokenSerializer
 
 
-custom_token_obtain_pair = Custom_TokenObtainPairView.as_view()
+custom_token_obtain_pair = CustomTokenObtainPairView.as_view()
 
 
 @api_view(['POST'])
@@ -176,8 +176,7 @@ class CommentViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         review = get_object_or_404(Review, id=self.kwargs['review_id'])
-        comments = review.comments.all()
-        return comments
+        return review.comments.all()
 
     def perform_create(self, serializer):
         review = get_object_or_404(
