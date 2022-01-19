@@ -1,10 +1,14 @@
 # yamdb_final
 ![example workflow](https://github.com/Viktor-Gostyaikin/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 ### Описание проетка:
+В проекте реализованы:
+- автоматический запуск тестов,
+- обновление образов на Docker Hub,
+- автоматический деплой на боевой сервер при пуше в главную ветку main.
 Docker-compose сервис включающий в себя: 
-приложение YaMDb, которое собирает отзывы пользователей на различные произведения
-сервер nginx
-база данных PostgreSQL
+- приложение YaMDb, которое собирает отзывы пользователей на различные произведения
+- сервер nginx
+- база данных PostgreSQL
 
 ### Stack
 - python 3.7-slim
