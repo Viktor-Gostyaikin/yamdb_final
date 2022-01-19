@@ -64,8 +64,7 @@ class UserViewSet(viewsets.ModelViewSet):
             return self.update(request, *args, **kwargs)
         elif request.method == 'PATCH':
             return self.partial_update(request, *args, **kwargs)
-        elif request.method == 'DELETE':
-            return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
+        return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
 
 class CustomTokenObtainPairView(TokenViewBase):
