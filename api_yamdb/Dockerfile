@@ -1,6 +1,6 @@
 FROM python:3.7-slim
 WORKDIR /app
-COPY requirements.txt .
+COPY api_yamdb/requirements.txt .
 RUN pip3 install -r /app/requirements.txt --no-cache-dir
 COPY . .
 CMD ["python3", "manage.py", "migrate"] 
