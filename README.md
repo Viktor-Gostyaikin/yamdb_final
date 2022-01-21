@@ -105,7 +105,8 @@ YaMDB отправляет письмо с кодом подтверждения
 | Security Scheme Type   | API Key |
 |------------------------|--------:|
 | Header parameter name  |Bearer   |
-
+### Проект доступен по адрессу
+http://www.gostyaikin.ga
 ### Автор
 Виктор Гостяйкин
-https://github.com/Viktor-Gostyaikin/yamdb_final
+https://github.com/Viktor-Gostyaikin/
