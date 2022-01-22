@@ -147,6 +147,6 @@ dmypy.json
 
 # папки со статикой и медиа
 static/
-!static/redoc.yaml
+!api_yamdb/reviews/static/
 media/
 
